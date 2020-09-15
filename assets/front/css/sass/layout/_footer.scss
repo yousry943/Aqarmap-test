@@ -1,0 +1,46 @@
+footer{    
+    .top{          
+            background-color: #191919;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            img{
+                width: 150px;
+            }
+        }
+        p{
+            line-height:2.5;
+        }
+        .contact{
+            
+            ul{
+                text-align: right;
+                li{
+                    margin-bottom: 30px;
+
+                }
+            }
+        }
+        i{
+            color: $mainColor;
+            margin-left: 10px;
+        }
+        h4{
+            padding: 30px 0;
+            text-align: center;
+       
+    }
+    background-color: #2D2D2D;
+    color: #fff;
+    
+    p{
+        text-align: right;
+        font-size: 15px;
+        a{
+            color: $mainColor;
+        }
+    }
+    .copyrights{
+        padding-top: 10px;
+    }
+ 
+}

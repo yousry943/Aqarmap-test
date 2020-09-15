@@ -1,0 +1,234 @@
+html {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+body {
+  margin: 0px;
+  font-size: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.login-container,
+.login-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.login-wrapper {
+  /*background-color: #f5f5f5;*/
+  background-color: #0c2339;
+}
+.login-widget-wrapper {
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 380px;
+  
+}
+
+.company-info {
+  background-color: #0c2339;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 1em;
+}
+.company-info p {
+  color: #a5b7c6;
+  font-size: 0.9em;
+}
+.company-info a {
+  text-decoration: none;
+  color: #a5b7c6;
+  font-weight: bold;
+}
+.company-info a:hover {
+  color: #3de05c;
+}
+
+.company-info h1 {
+  margin: 0px;
+}
+.login-widget {
+  position: relative;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 5px;
+}
+.user-login {
+  width: 100%;
+  height: 100%;
+}
+.form-title h1 {
+  color: #1d262d;
+  text-align: center;
+}
+.form-title p {
+  line-height: 1.4em;
+  font-size: 0.8em;
+  color: #5f7d95;
+}
+.form-title a {
+  text-decoration: none;
+  color: #1273eb;
+}
+/*:not([type="submit"])*/
+.user-login input {
+  display: block;
+  width: 100%;
+  height: 52px;
+  border: 1px solid #e9eaec;
+  padding: 0em 1em;
+  outline: none;
+  margin-bottom: 1.3em;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+.user-login input:not([type="submit"]):hover {
+  border-color: #ced0d4;
+}
+.user-login .submit-btn, .user-login .sign-up-btn {
+  background-color: #1273eb;
+  color: white;
+  font-weight: bolder;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.submit-btn:hover, .sign-up-btn:hover {
+  background-color: #0161cd;
+}
+
+.input-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.showPassImg {
+  position: absolute;
+  right: 1em;
+  top: 14px;
+  z-index: 3;
+  cursor: pointer;
+  display: none;
+}
+.input-pholder {
+  color: #b3b3b3;
+  font-size: 0.8em;
+  position: absolute;
+  top: 18.5px;
+  left: 1em;
+  z-index: 1;
+  transition: all 0.2s;
+}
+.user-login .pholder-top {
+  position: absolute;
+  top: -6px;
+  left: 1.3em;
+  padding: 0px 4px;
+  background-color: #fff;
+  z-index: 3;
+  font-size: 0.7em;
+}
+
+.user-login .input-focus-color {
+  border-color: #0161cd !important;
+}
+.register-forget {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.register-forget span {
+  font-size: 0.8em;
+  color: #1273eb;
+  cursor: pointer;
+}
+.invalid-text {
+    font-size: 0.8em;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    color: red;
+    display: none;
+}
+.remember-me{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 32px;
+  font-size: 13px;
+  text-transform: lowercase;
+  
+}
+.remember-me input{
+  width: auto;
+  height: auto;
+}
+
+/* #sign-up-form, .signin-btn, #forget-pass-form {
+  display: none;
+} */
+
+@media (max-width: 601px) {
+  .login-widget-wrapper {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .login-widget {
+    border-radius: 0px;
+  }
+  .company-info h1 {
+    font-size: 1.5em;
+    padding: 0px 1em;
+  }
+  .company-info p {
+    padding: 0px 1em;
+  }
+}
+@media (max-width: 468px) {
+  .login-wrapper {
+    display: block;
+  }
+  .login-widget-wrapper {
+    padding-top: 50px;
+  }
+  
+  .company-info h1, .form-title h1 {
+    font-size: 1.2em;
+  }
+  .company-info p {
+    font-size: 0.8em;
+  }
+  .register-forget {
+    flex-direction: column;
+    align-items: center;
+  }
+  .register-forget span:not(:last-child) {
+    margin-bottom: 1em;
+  }
+  .form-title p {
+    font-size: 0.7em;
+  }
+}

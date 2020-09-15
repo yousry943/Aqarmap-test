@@ -1,0 +1,87 @@
+.secondry-page{
+    background: url("../images/slider-2.jpg") no-repeat center center;
+    background-attachment: fixed;
+}
+.appartment{
+    h3.name{
+        i{
+            color: $mainColor;
+            margin-right: 30px;
+        }
+    }
+    .info{
+        ul{
+            margin-top: 10px;
+            li{
+                padding: 10px 0;
+            }
+        }
+        .btn{
+            margin-bottom: 10px;
+        }
+    }
+    .map{
+        margin: 20px 0;
+    }
+    .details{
+        h2{
+            padding-bottom: 20px !important;
+        }
+        ul{
+            margin-top: 10px;
+            li{
+                padding: 10px 0;
+            }
+        }
+    }
+}
+.similar{     
+    border-top:2px solid #ddd;
+
+.flat{
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow:0 5px 13px rgba(111, 111, 111, 0.15);
+    
+    img{
+        // width: 100%;
+        // height: 180px;
+    }
+    .flat-text{
+        padding: 20px;
+        color: #5f727f;
+        background-color: #fff;
+        ul{
+            padding: 0;
+            text-align: right;
+            li.red-txt{
+                color: $mainColor;
+                font-weight: 700;
+            }
+        }
+
+}
+.button-center{
+    margin: 0 auto;
+}
+    }
+    // .carousel-control-next{
+    //     width: initial;
+    //     right: -30px;
+    // }
+    // .carousel-control-prev{
+    //     width: initial;
+    //     left: -30px;
+    // }
+    .carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fe0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fe0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+}
+
+.demo{
+    direction: ltr;
+}

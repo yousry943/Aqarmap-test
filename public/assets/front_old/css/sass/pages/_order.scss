@@ -1,0 +1,46 @@
+.offset-md-1{
+    margin-left: 0;
+    margin-right: 8.333333%;
+}
+.secondry-page{
+    background: url("../images/slider-2.jpg") no-repeat center center;
+    background-attachment: fixed;
+}
+
+.order-form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    form{
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        -o-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        // @include prefixer (transition ,all 0.5s ease-in-out,webkit moz);
+        // &:hover{
+        //     box-shadow: none;
+        // }
+        padding: 20px;
+        h3{
+          
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 40px;
+            color: $mainColor;
+        }
+        .form-group{           
+            .alert-danger{
+                margin-top: 10px;
+                padding: .7rem 1.25rem;
+            }
+        }
+        select.form-control:not([size]):not([multiple]){
+            height: initial;
+        }
+    }
+}
+.modal#acceptModal{
+    p{
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,40 @@
+.secondry-page{
+    background: url("../images/slider-2.jpg") no-repeat center center;
+    background-attachment: fixed;
+}
+.table-responsive{
+    max-height: 600px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+.table{   
+    .image{
+        width: 120px;
+        img{           
+            height: 120px;
+        }
+    }  
+    tr{
+        th{
+            text-align: center;
+        }
+    }  
+    td{
+        text-align: center;
+        position: relative;
+    }
+    td span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    a{
+        color: $greyColor;
+        @include prefixer (transition ,all 0.5s ease-in-out,webkit moz);
+        &:hover{
+            color: red;
+        }
+    }
+}
+

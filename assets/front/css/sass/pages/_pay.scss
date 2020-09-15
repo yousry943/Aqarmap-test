@@ -1,0 +1,20 @@
+.secondry-page{
+    background: url("../images/slider-2.jpg") no-repeat center center;    
+}
+.pay{
+    label{
+        font-weight: 600;
+        span.red-text{
+          color: $mainColor;
+        }
+    }
+    .button-center{
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+}
+.modal#congratsModal{
+    p{
+       padding: 10px 0;
+    }
+}

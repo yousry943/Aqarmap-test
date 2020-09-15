@@ -1,0 +1,62 @@
+.secondry-page{
+    background: url("../images/slider-2.jpg") no-repeat center center;    
+}
+.settings{
+    .offset-md-3{
+        margin-right:25%;
+        margin-left: 0;
+    }
+    .prof-img{
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        border: 2px solid #fff;
+        margin: 20px 0 15px;
+        cursor: pointer;
+        display: block;
+        background: #f0f0f0;
+        margin: 0 auto;
+    }
+    label{
+        font-weight: 600;
+        .red-text{
+            color: $mainColor;
+        }
+    }
+    .form-group .custom-radio label{
+        padding-right: 35px;
+    }
+     .form-group .custom-radio .custom-control-label::before, .form-group .custom-radio .custom-control-label::after {
+        left: initial;
+        right: 0.5rem;
+    }
+    .form-group .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #006A61;
+    }
+    .form-group{
+       overflow: hidden;
+        label{
+            width: 100%;
+        }
+        .form-control{
+            float: right;
+            width: 80%;
+        }
+        .icons{
+            width: 10%;  
+            float: right;
+            margin-right: 20px;
+            margin-top: 10px;
+            display: inline-block;  
+            i{
+                cursor: pointer;
+            }    
+            i.fa-trash-alt{
+                color: $mainColor;
+            }
+        }        
+    }
+    .clear{
+        clear: both;
+    }
+}

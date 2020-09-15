@@ -1,0 +1,149 @@
+.carousel .btn-primary{
+    background-color: #ef012e;
+}
+.main{
+    position: relative;
+    .overlay{
+        @media (min-width :1200px){
+            height: 80vh;
+        }
+        @media (max-width : 768px){
+            height: 50vh;
+        }
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        text-align: left;
+        z-index: 9;
+        img{
+            width: 399px;
+            height: 291px;
+            margin-top: 10%;
+            margin-left: 20px;
+            @media (max-width : 768px){
+            width: 200px;
+            height: 131px;
+            // margin-top: 10px;
+            // margin-bottom: 10px;
+            // margin-left: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            }
+        }
+    }
+    height: calc( 100vh + 80px );
+    @media (min-width :1200px){
+    height: 80vh;
+    position: relative;
+    // top: -100px;
+    // overflow: hidden;
+    // margin-bottom: -100px;
+    .carousel{
+        height: 80vh;
+        // z-index: 9;
+     img{
+        width: 100%;        
+        height: 80vh;
+        }
+    }
+}
+    @media (max-width : 768px){
+        .carousel{        
+         img{
+             height: 50vh;
+         }
+    }
+}
+
+    
+}
+
+.search-now{
+    select.form-control:not([size]):not([multiple]){
+        height: initial;
+    }
+
+    .btn{
+        margin-top: 20px;
+    }
+    .custom-checkbox{
+        margin-top: 20px;
+        padding-left: 0;
+    }
+    .custom-control-label::before{
+        right: -1.5rem;
+        left: initial;
+    }
+    .custom-control-label::after{
+        right: -1.5rem;
+        left: initial;
+    }
+    .custom-control-input:checked~.custom-control-label::before,
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+        background-color: $mainColor;
+    }
+}
+.featured-appartments{    
+    border-top:2px solid #ddd;
+   
+    .price{
+        overflow: hidden;
+        margin-bottom: 30px;
+        box-shadow:0 5px 13px rgba(111, 111, 111, 0.15);
+        
+        img{
+            // width: 100%;
+            // height: 180px;
+        }
+        .price-text{
+            padding: 20px;
+            color: #5f727f;
+            background-color: #fff;
+            ul{
+                text-align: right;
+                li.red-txt{
+                    color: $mainColor;
+                    font-weight: 700;
+                }
+            }
+
+    }
+    .button-center{
+        margin: 0 auto;
+    }
+}
+.paging{
+    margin: 0 auto;
+    margin-top: 40px;
+    direction: ltr;
+    li.page-item{
+        float: right;
+        margin-right: 10px;
+    }
+    .page-link{
+        border-radius: 50%;
+        color: $mainColor;
+    }
+    .page-item.active .page-link{
+        background-color: $mainColor;
+        border-color: $mainColor;
+        color: #fff;
+       
+    }
+    .page-item:first-child .page-link{
+        border-bottom-left-radius: 50%; 
+       border-top-left-radius: 50%;
+    }
+    .page-item:last-child .page-link{
+        border-top-right-radius: 50%;
+        border-bottom-right-radius:50%;
+    }
+}
+}
+
+
+

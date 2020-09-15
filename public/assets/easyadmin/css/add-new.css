@@ -1,0 +1,172 @@
+body{
+    background-color: #e0e0e0;
+    font-size: 13px;
+}
+.navigation{
+    background-color: #fff;
+    padding:.5em 1em;
+    margin-bottom: 2em
+}
+.navigation a{
+    color: #444;
+    font-weight: bold;
+}
+.navigation span{
+    color: #444
+}
+.nav-container{
+    margin-bottom: .5em
+}
+.save , .discard, .add-new ,.delete ,.add-new:hover ,.add-line{
+    background-color: #216e42;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .5em 1em;
+    color: #e0e0e0;
+    outline: none;
+    border: none;
+    transition: .25s ease;
+    cursor: pointer;
+}
+.save:hover ,.add-new:hover ,.delete:hover, .add-line:hover{
+    background-color: #185432;
+    color: #fff
+}
+.discard{
+    background-color: transparent;
+    color: #216e42
+}
+.discard:hover{
+    background-color: #bbb;
+    color: #185432
+}
+.account-info, .sup-account-info{
+    width: 65%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1em;
+    -webkit-box-shadow: 0px 2px 11px -3px rgba(71,69,71,0.39);
+    -moz-box-shadow: 0px 2px 11px -3px rgba(71,69,71,0.39);
+    box-shadow: 0px 2px 11px -3px rgba(71,69,71,0.39);
+}
+.sup-account-info{
+    width: 100%;
+    box-shadow: none
+}
+.account-info h2{
+    padding: .5em 2em;
+    float: left;
+    text-transform: uppercase
+}
+.title{
+    border-bottom: 1px solid #e0e0e0
+}
+.account-info form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    width: 100%
+}
+.account-info form div {
+    width: 100%;
+    margin: 5px 0;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-start; */
+    padding: 0 2em
+}
+.account-info form .info{
+    display: block;
+    width: 50%;
+}
+.account-info form .Summary{
+    width: 50%;
+    align-items: flex-start;
+
+}
+input , select,textarea{
+    border: none!important
+}
+label{
+    width: 30%;
+    text-transform: capitalize;
+    font-weight: 500
+}
+input,textarea{
+    border-bottom: 2px solid #ccc!important
+}
+select{
+    width: 65%;
+    border-bottom: 1px solid #333!important
+}
+.sup-form-container input{
+    width: 100%;
+}
+.sup-form-container input[name="credit"]{
+    display: inline-block;
+    width: 70%
+}
+.actions{
+    float: right;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+table{
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+th,td{
+    border-bottom: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    padding: 0 16px!important
+}
+
+.clear{
+    clear: both;
+}
+input::placeholder{
+    color: #ccc!important
+}
+select {
+    width: 100%;
+    border-bottom: 1px solid #333!important;
+}
+textarea {
+    width: 100%;
+}
+@media(max-width:768px){
+    .account-info{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: .5em 0
+    }
+    .account-info h2{
+        font-size: 16px
+    }
+    .account-info form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+    .account-info form div {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        margin-bottom: 10px!important
+    }
+    label{
+        width: 50%;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    input , select,textarea{
+        display: inline-block;
+        margin-left: .5em
+    }
+}

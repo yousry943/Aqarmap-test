@@ -1,0 +1,43 @@
+.secondry-page{
+    background: url("../images/slider-2.jpg") no-repeat center center;
+    background-attachment: fixed;
+}
+.confirm{
+    .data{
+        border-top: 2px solid #333;
+        border-bottom: 2px solid #333;
+        padding: 20px 0;        
+        p{
+            font-size: 17px;
+            span.red-text{
+                color: $fuchiaColor;
+            }
+        }
+    }
+    .form-group{
+        h4{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .custom-radio{
+            margin-bottom: 15px;
+            label{
+                padding-right: 15px;
+            }
+            .custom-control-label::before , .custom-control-label::after{
+                left:initial ;
+                right: -0.5rem;
+            }            
+        }
+        .custom-radio .custom-control-input:checked~.custom-control-label::before{
+            background-color: $greenColor;;
+        }
+    }
+    a.continue{
+        color: #fff;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
